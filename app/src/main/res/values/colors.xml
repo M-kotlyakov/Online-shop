@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Common colors  -->
+    <color name="main_background">#FAF9FF</color>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#808080</color>
+
+    <!--  Sign in page && Login -->
+    <color name="head_black_color">#161826</color>
+    <color name="grey_placeholder_color">#E8E8E8</color>
+    <color name="text_inside_placeholder_color">#7B7B7B</color>
+    <color name="log_in_color">#254FE6</color>
+    <color name="sign_in_color">#000000</color>
+    <color name="sigh_in_button_color">#4E55D7</color>
+
+    <!--  Profile  -->
+    <color name="profile_name_color">#3F3F3F</color>
+    <color name="text_inside_button_color">#EAEAEA</color>
+    <color name="section_color">#040402</color>
+
+    <!--  Page 1  -->
+    <color name="sale_item_color">#F93A3A</color>
+</resources>

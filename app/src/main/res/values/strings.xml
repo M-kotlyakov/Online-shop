@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_main_screen">Home</string>
+    <string name="title_like">Like</string>
+    <string name="title_basket">Basket</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+</resources>
