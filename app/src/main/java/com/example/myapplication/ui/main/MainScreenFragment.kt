@@ -7,14 +7,17 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI.setupWithNavController
+import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentMainScreenBinding
 
 class MainScreenFragment : Fragment() {
 
-    private var _binding: FragmentMainScreenBinding? = null
+    private var navController: NavController? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var _binding: FragmentMainScreenBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -28,12 +31,23 @@ class MainScreenFragment : Fragment() {
         _binding = FragmentMainScreenBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
         homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+            binding.textViewMain.text = it
         }
+
+//        setupBottomBarNavigation()
         return root
     }
+
+//    private fun setupBottomBarNavigation() {
+//        binding.navView.apply {
+//            navController = (
+//                childFragmentManager
+//                    .findFragmentById(R.id.nav_host_fragment_fragment_main) as NavHostFragment
+//                ).navController
+//            setupWithNavController(this, navController!!)
+//        }
+//    }
 
     override fun onDestroyView() {
         super.onDestroyView()
